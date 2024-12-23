@@ -34,6 +34,7 @@ export class HomePage extends BaseComponent {
         welcomeText.classList.add('welcome-text');
 
         const introduction = document.createElement('p');
+        introduction.classList.add('introduction');
         introduction.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis placerat. Etiam luctus sagittis diam eu vehicula. Curabitur velit nisl, elementum id odio dictum, faucibus tempus dolor. Nam imperdiet ac urna at fringilla. In pretium lacus erat, nec lobortis ipsum hendrerit eu. Morbi non lacus risus. Maecenas vel pulvinar.";
 
         welcomeTextBox.appendChild(welcomeText);
@@ -42,6 +43,13 @@ export class HomePage extends BaseComponent {
 
         const interactiveFigure = document.createElement('div');
         interactiveFigure.classList.add('interactive-figure');
+
+        const spline3d = document.createElement('iframe');
+        spline3d.setAttribute('src', 'https://my.spline.design/untitled-7e19e8abccace036ed843c404d3837a4/');
+        spline3d.setAttribute('frameborder', 0);
+        spline3d.setAttribute('id', 'spline');
+
+        interactiveFigure.appendChild(spline3d);
         slideContainer.appendChild(interactiveFigure);
 
         return slideContainer;
