@@ -1,0 +1,37 @@
+.slide-container {
+    background-color: #f7e9de;
+    width: 100vw;
+    height: 100vh;
+}
+
+.welcome-slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #f15f61;
+}
+
+.welcome-text-box {
+    border-radius: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 75%;
+    height: 75%;
+    background-color: #f0bbb4;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.welcome-text {
+    padding-top: 20%;
+    font-size: 300%;
+}
+
+.interactive-figure {
+    border-radius: 20%;
+    margin-top: 5%;
+    width: 85%;
+    height: 85%;
+    background-color: #f0bbb4;
+}
+
