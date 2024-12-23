@@ -1,5 +1,5 @@
 .slide-container {
-    background-color: #ba8ce6;
+    background-image: linear-gradient(#ba8ce6, #391e86);
     width: 100vw;
     height: 100vh;
 }
@@ -7,7 +7,7 @@
 .welcome-slide {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: #391e86;
+    color: #c5a8ec;
 }
 
 .welcome-text-box {
@@ -22,7 +22,7 @@
 
 .welcome-text {
     padding-top: 20%;
-    font-size: 300%;
+    font-size: 400%;
     animation: slideUp ease-in-out 2s;
 }
 
