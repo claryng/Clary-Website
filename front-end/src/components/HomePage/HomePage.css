@@ -1,3 +1,5 @@
+/* Welcome Section */
+
 .slide-container {
     background-image: linear-gradient(#ba8ce6, #391e86);
     width: 100vw;
@@ -60,3 +62,26 @@
     }
 }
 
+/* Projects */
+
+.projects-section {
+    padding-top: 10%;
+    padding-left: 4%;
+    background-color: #391e86;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #c5a8ec;
+}
+
+.project {
+    margin-top: 10%;
+}
+
+.project-illustration {
+    width: 65%;
+    height: 70vh;
+    margin-left: 12%;
+    margin-bottom: 10%;
+    border-radius: 20%;
+    background-color: #ba8ce6;
+}
