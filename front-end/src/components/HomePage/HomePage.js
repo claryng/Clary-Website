@@ -107,18 +107,12 @@ export class HomePage extends BaseComponent {
     #initObserver() {
         this.#observer = new IntersectionObserver(entries => {
             entries.forEach((entry) => {
-                if(entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                    if(entry.target.querySelector('#spline')) {
-                        entry.target.classList.add('fade-in-animation');
-                    } else {
-                        entry.target.classList.add('slide-up-animation');
-                    }
-                    entry.target.classList.add('animated');
-                } 
+                if(entry.target.querySelector('#spline') || entry.target.classList.contains('project') || entry.target.classList.contains('project-illustration')) {
+                    entry.target.classList.toggle('fade-in-animation', entry.isIntersecting);
+                } else {
+                    entry.target.classList.toggle('slide-up-animation', entry.isIntersecting);
+                }
             });
-        },
-        {
-            threshold: 0
         });
     }
 
