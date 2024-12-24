@@ -1,15 +1,18 @@
+#homepage {
+    position: absolute;                                             
+    margin: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
 /* Welcome Section */
 
 .slide-container {
     background-image: linear-gradient(#ba8ce6, #391e86);
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    margin: 0px;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
 }
 
 .welcome-slide {
@@ -31,11 +34,6 @@
 .welcome-text {
     padding-top: 20%;
     font-size: 400%;
-    animation: slideUp ease-in-out 2s;
-}
-
-.introduction {
-    animation: slideUp ease-in-out 2s;
 }
 
 .interactive-figure {
@@ -45,28 +43,8 @@
 #spline {
     width: 100%;
     height: 100%;
-    animation: fadeIn ease-in-out 2.5s;
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 /* Projects */
 
@@ -90,4 +68,32 @@
     margin-bottom: 10%;
     border-radius: 20%;
     background-color: #ba8ce6;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-up-animation {
+    animation: slideUp ease-in-out 2s;
+}
+
+.fade-in-animation {
+    animation: fadeIn ease-in-out 2.5s;
 }
