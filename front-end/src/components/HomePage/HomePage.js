@@ -77,8 +77,10 @@ export class HomePage extends BaseComponent {
         const projectTitle = document.createElement('h2');
         projectTitle.innerText = "Project Title";
 
-        const horizontalLine1 = document.createElement('hr');
-        const horizontalLine2 = document.createElement('hr');
+        const horizontalLine1 = document.createElement('div');
+        const horizontalLine2 = document.createElement('div');
+        horizontalLine1.classList.add('horizontal-line');
+        horizontalLine2.classList.add('horizontal-line');
 
         const projectDescription = document.createElement('p');
         projectDescription.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis placerat. Etiam luctus sagittis diam eu vehicula. Curabitur velit nisl, elementum id odio dictum, faucibus tempus dolor. Nam imperdiet ac urna at fringilla. In pretium lacus erat, nec lobortis ipsum hendrerit eu. Morbi non lacus risus. Maecenas vel pulvinar.";

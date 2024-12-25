@@ -97,3 +97,35 @@
 .fade-in-animation {
     animation: fadeIn ease-in-out 2.5s;
 }
+
+.horizontal-line {
+    width: 50vw;
+    height: .25vh;
+    position: absolute;
+    background-color: #391e86;
+}
+
+.horizontal-line::before {
+    content: '';
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c5a8ec;
+    transform-origin: left;
+    animation: showup 5s linear infinite;
+}
+
+@keyframes showup {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+}
+
+.project p {
+    padding-top: 3%;
+}
