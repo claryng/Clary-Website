@@ -59,6 +59,7 @@
 
 .project {
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .project-illustration {
@@ -113,8 +114,11 @@
     width: 100%;
     height: 100%;
     background-color: #c5a8ec;
+}
+
+.show-up-animation {
     transform-origin: left;
-    animation: showup 5s linear infinite;
+    animation: showup 4s linear;
 }
 
 @keyframes showup {

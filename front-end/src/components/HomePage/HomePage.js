@@ -72,21 +72,28 @@ export class HomePage extends BaseComponent {
 
         const project = document.createElement('div');
         project.classList.add('project');
-        project.classList.add('animate');
-
+        
         const projectTitle = document.createElement('h2');
         projectTitle.innerText = "Project Title";
+        projectTitle.classList.add('animate');
+        projectTitle.classList.add('fade-in');
 
         const horizontalLine1 = document.createElement('div');
         const horizontalLine2 = document.createElement('div');
         horizontalLine1.classList.add('horizontal-line');
+        horizontalLine1.classList.add('animate');
         horizontalLine2.classList.add('horizontal-line');
+        horizontalLine2.classList.add('animate');
 
         const projectDescription = document.createElement('p');
         projectDescription.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis placerat. Etiam luctus sagittis diam eu vehicula. Curabitur velit nisl, elementum id odio dictum, faucibus tempus dolor. Nam imperdiet ac urna at fringilla. In pretium lacus erat, nec lobortis ipsum hendrerit eu. Morbi non lacus risus. Maecenas vel pulvinar.";
-        
+        projectDescription.classList.add('fade-in');
+        projectDescription.classList.add('animate');
+
         const techStack = document.createElement('p');
         techStack.innerText = "Tech: Lorem ipsum"
+        techStack.classList.add('fade-in');
+        techStack.classList.add('animate');
 
         project.appendChild(projectTitle);
         project.appendChild(horizontalLine1);
@@ -100,6 +107,7 @@ export class HomePage extends BaseComponent {
         const illustration = document.createElement('div');
         illustration.classList.add('project-illustration');
         illustration.classList.add('animate');
+        illustration.classList.add('fade-in');
 
         slideContainer.appendChild(illustration);
         
@@ -109,8 +117,10 @@ export class HomePage extends BaseComponent {
     #initObserver() {
         this.#observer = new IntersectionObserver(entries => {
             entries.forEach((entry) => {
-                if(entry.target.querySelector('#spline') || entry.target.classList.contains('project') || entry.target.classList.contains('project-illustration')) {
+                if(entry.target.querySelector('#spline') || entry.target.classList.contains('fade-in')) {
                     entry.target.classList.toggle('fade-in-animation', entry.isIntersecting);
+                } else if(entry.target.classList.contains('horizontal-line')) {
+                    entry.target.classList.toggle('show-up-animation', entry.isIntersecting);
                 } else {
                     entry.target.classList.toggle('slide-up-animation', entry.isIntersecting);
                 }
