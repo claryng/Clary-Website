@@ -1,6 +1,6 @@
 // Server.js
 import express from "express";
-import { ProjectRoutes } from './routes/ProjectRoutes.js'
+import ProjectRoutes from './routes/ProjectRoutes.js'
 
 class Server {
     constructor() {
