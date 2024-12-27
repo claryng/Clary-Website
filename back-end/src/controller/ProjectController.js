@@ -2,7 +2,7 @@ import ModelFactory from "../model/ModelFactory.js";
 
 class ProjectController {
     constructor() {
-        ModelFactory.getModel().then((model) => {
+        ModelFactory.getModel('sqlite-fresh').then((model) => {
             this.model = model;
         });
     }

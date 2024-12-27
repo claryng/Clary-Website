@@ -20,7 +20,7 @@ class Server {
 
     // Setup routes by using imported ProjectRoutes
     setupRoutes() {
-    this.app.use("/v1", ProjectRoutes); // Mount ProjectRoutes on the app
+        this.app.use("/v1", ProjectRoutes); // Mount ProjectRoutes on the app
     }
 
     // Start the server on a specified port

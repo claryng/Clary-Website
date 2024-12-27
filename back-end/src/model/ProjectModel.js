@@ -27,7 +27,7 @@ const Project = sequelize.define('Project', {
         allowNull: false,
     },
     time: {
-        type: DataTypes.DATEONLY,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     image: {
@@ -45,7 +45,18 @@ class _ProjectModel {
 
         if(fresh) {
             // init with default values
+            this.create({
+                title: 'Project Title',
+                description: 'Description',
+                tech: 'Tech',
+                time: 'December 27th, 2024',
+                image: 'source'
+            })
         }
+    }
+
+    async create(project) {
+        return await Project.create(project);
     }
 }
 
