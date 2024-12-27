@@ -48,3 +48,7 @@ class _ProjectModel {
         }
     }
 }
+
+const ProjectModel = new _ProjectModel();
+
+export default ProjectModel;
