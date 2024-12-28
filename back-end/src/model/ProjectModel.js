@@ -33,6 +33,11 @@ const Project = sequelize.define('Project', {
     image: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    source: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        defaultValue: 'N/A'
     }
 });
 
