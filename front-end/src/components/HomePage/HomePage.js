@@ -3,6 +3,7 @@ import { BaseComponent } from "../BaseComponent/BaseComponent.js";
 export class HomePage extends BaseComponent {
     #container = null;
     #observer = null;
+    #projects = [];
 
     constructor() {
         super();
@@ -14,6 +15,7 @@ export class HomePage extends BaseComponent {
             return this.#container;
         }
 
+        this.#projects = this.#getProjects('./components/HomePage/projects.csv');
         this.#createContainer();
         this.#initObserver();
         this.#subscribeToObserve();
@@ -68,48 +70,57 @@ export class HomePage extends BaseComponent {
 
     #addProject() {
         const slideContainer = document.createElement('div');
-        slideContainer.classList.add('projects-section');
-
-        const project = document.createElement('div');
-        project.classList.add('project');
         
-        const projectTitle = document.createElement('h2');
-        projectTitle.innerText = "Project Title";
-        projectTitle.classList.add('animate');
-        projectTitle.classList.add('fade-in');
+        for(const pr of this.#projects) {
+            const projectContainer = document.createElement('div');
+            projectContainer.classList.add('project-container');
+            
+            const project = document.createElement('div');
+            project.classList.add('project');
+            
+            const projectTitle = document.createElement('h2');
+            projectTitle.innerText = pr.title;
+            projectTitle.classList.add('animate');
+            projectTitle.classList.add('fade-in');
+    
+            const horizontalLine1 = document.createElement('div');
+            const horizontalLine2 = document.createElement('div');
+            horizontalLine1.classList.add('horizontal-line');
+            horizontalLine1.classList.add('animate');
+            horizontalLine2.classList.add('horizontal-line');
+            horizontalLine2.classList.add('animate');
+    
+            const projectDescription = document.createElement('p');
+            projectDescription.innerText = pr.description;
+            projectDescription.classList.add('fade-in');
+            projectDescription.classList.add('animate');
+    
+            const techStack = document.createElement('p');
+            techStack.innerText = pr.tech;
+            techStack.classList.add('fade-in');
+            techStack.classList.add('animate');
+    
+            project.appendChild(projectTitle);
+            project.appendChild(horizontalLine1);
+            project.appendChild(projectDescription);
+            project.appendChild(horizontalLine2);
+            project.appendChild(techStack);
 
-        const horizontalLine1 = document.createElement('div');
-        const horizontalLine2 = document.createElement('div');
-        horizontalLine1.classList.add('horizontal-line');
-        horizontalLine1.classList.add('animate');
-        horizontalLine2.classList.add('horizontal-line');
-        horizontalLine2.classList.add('animate');
+            // image/gif/video
+            const illustration = document.createElement('div');
+            illustration.classList.add('project-illustration');
+            
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', pr.image);
+            iframe.classList.add('fade-in');
+            iframe.classList.add('animate');
+            illustration.appendChild(iframe);
 
-        const projectDescription = document.createElement('p');
-        projectDescription.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis placerat. Etiam luctus sagittis diam eu vehicula. Curabitur velit nisl, elementum id odio dictum, faucibus tempus dolor. Nam imperdiet ac urna at fringilla. In pretium lacus erat, nec lobortis ipsum hendrerit eu. Morbi non lacus risus. Maecenas vel pulvinar.";
-        projectDescription.classList.add('fade-in');
-        projectDescription.classList.add('animate');
+            projectContainer.appendChild(project);
+            projectContainer.appendChild(illustration);
 
-        const techStack = document.createElement('p');
-        techStack.innerText = "Tech: Lorem ipsum"
-        techStack.classList.add('fade-in');
-        techStack.classList.add('animate');
-
-        project.appendChild(projectTitle);
-        project.appendChild(horizontalLine1);
-        project.appendChild(projectDescription);
-        project.appendChild(horizontalLine2);
-        project.appendChild(techStack);
-
-        slideContainer.appendChild(project);
-
-        // image/gif/video
-        const illustration = document.createElement('div');
-        illustration.classList.add('project-illustration');
-        illustration.classList.add('animate');
-        illustration.classList.add('fade-in');
-
-        slideContainer.appendChild(illustration);
+            slideContainer.appendChild(projectContainer);
+        }
         
         return slideContainer;
     }
@@ -132,5 +143,83 @@ export class HomePage extends BaseComponent {
         this.#container.querySelectorAll('.animate').forEach(target => {
             this.#observer.observe(target);
         });
+    }
+
+    #getProjects(file) {
+        const reader = new XMLHttpRequest();
+        const projects = [];
+        reader.open("GET", file, false);
+        reader.onreadystatechange = function() {
+
+            // DONE
+            if(reader.readyState === 4) {
+                if(reader.status === 200 || reader.status === 0) { // DONE or OPENED
+                    let data = reader.responseText;
+                    data = data.trim();
+
+                    // Extract all records
+                    let quoted = false;
+                    const records = [];
+                    let record = '';
+                    for(let i = 0; i < data.length; i++) {
+                        let c = data[i];
+                        if(quoted) {
+                            record += c;
+                            if(c == '"') {
+                                quoted = false;
+                            }
+                        } else {
+                            if(c == '\n') {
+                                records.push(record.trim());
+                                record = '';
+                            }else {
+                                record += c;
+                                if(c == '"') {
+                                    quoted = true;
+                                }
+                            }
+                        }
+                    }
+                    records.push(record.trim());
+
+                    // Create new entries in Project table with the extracted records
+                    for(record of records) {
+                        quoted = false;
+                        let field = '';
+                        const fields = [];
+                        for(let i = 0; i < record.length; i++) {
+                            let c = record[i];
+                            if(quoted) {
+                                if(c == '"') {
+                                    quoted = false;
+                                    c = '';
+                                }
+                                field += c;
+                            }else {
+                                if(c == ',') {
+                                    fields.push(field.trim());
+                                    field = '';
+                                }else if(c == '"') {
+                                    quoted = true;
+                                }else {
+                                    field += c;
+                                }
+                            }
+                        }
+                        fields.push(field.trim());
+                        projects.push({
+                            title: fields[0],
+                            description: fields[1],
+                            tech: fields[2],
+                            time: fields[3],
+                            image: fields[4],
+                            source: fields[5]
+                        });
+                    }
+                }
+            }
+        };
+        reader.send(null);
+        return projects;
     }
 }
