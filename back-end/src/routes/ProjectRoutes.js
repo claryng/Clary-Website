@@ -8,7 +8,9 @@ class ProjectRoutes {
     }
 
     initializeRoutes() {
-
+        this.router.get("/projects", async (req, res) => {
+            await ProjectController.getAllProjects(res, req);
+        });
     }
 
     getRouter() {
