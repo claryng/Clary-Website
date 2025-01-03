@@ -130,8 +130,10 @@ export class HomePage extends BaseComponent {
             entries.forEach((entry) => {
                 if(entry.target.querySelector('#spline') || entry.target.classList.contains('fade-in')) {
                     entry.target.classList.toggle('fade-in-animation', entry.isIntersecting);
+                    entry.target.classList.toggle('fade-out-animation', !entry.isIntersecting);
                 } else if(entry.target.classList.contains('horizontal-line')) {
                     entry.target.classList.toggle('show-up-animation', entry.isIntersecting);
+                    entry.target.classList.toggle('disappear-animation', !entry.isIntersecting);
                 } else {
                     entry.target.classList.toggle('slide-up-animation', entry.isIntersecting);
                 }
@@ -220,6 +222,6 @@ export class HomePage extends BaseComponent {
             }
         };
         reader.send(null);
-        return projects;
+        return projects.reverse();
     }
 }

@@ -67,7 +67,6 @@
     height: 70vh;
     margin-left: 12%;
     margin-bottom: 10%;
-    border-radius: 20%;
     overflow: hidden;
     background-color: #391e86;
 }
@@ -76,6 +75,7 @@
     width: 100%;
     height: 100%;
     border: none;
+    background: #391e86;
 }
 
 @keyframes slideUp {
@@ -89,6 +89,15 @@
     }
 }
 
+@keyframes fadeOut {
+    100% {
+        opacity: .5;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -99,11 +108,14 @@
 }
 
 .slide-up-animation {
-    animation: slideUp ease-in-out 2s;
+    animation: slideUp ease-in-out 1.5s;
 }
 
 .fade-in-animation {
-    animation: fadeIn ease-in-out 2s;
+    animation: fadeIn ease-in-out 1.5s;
+}
+.fade-out-animation {
+    animation: fadeOut ease-in-out 1.5s;
 }
 
 .horizontal-line {
@@ -124,8 +136,11 @@
 }
 
 .show-up-animation {
-    transform-origin: left;
-    animation: showup 4s linear;
+    /* transform-origin: left; */
+    animation: showup .5s linear;
+}
+.disappear-animation {
+    opacity: 0;
 }
 
 @keyframes showup {
