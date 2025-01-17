@@ -155,3 +155,27 @@
 .project p {
     padding-top: 3%;
 }
+
+.time-line {
+    left: 30%;
+    width: 24%;
+}
+
+.time {
+    text-align: right;
+    padding-right: 0;
+}
+
+.tech-stack {
+    padding-bottom: 5%;
+}
+
+.project a {
+    color: #c5a8ec;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.project a:hover {
+    color: white;
+}

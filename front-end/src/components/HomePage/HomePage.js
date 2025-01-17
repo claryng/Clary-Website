@@ -79,9 +79,17 @@ export class HomePage extends BaseComponent {
             project.classList.add('project');
             
             const projectTitle = document.createElement('h2');
-            projectTitle.innerText = pr.title;
             projectTitle.classList.add('animate');
             projectTitle.classList.add('fade-in');
+
+            if(pr.source !== 'N/A') {
+                const link = document.createElement('a');
+                link.setAttribute('href', pr.source);
+                link.innerText = pr.title;
+                projectTitle.appendChild(link);
+            }else {
+                projectTitle.innerText = pr.title;
+            }
     
             const horizontalLine1 = document.createElement('div');
             const horizontalLine2 = document.createElement('div');
@@ -89,22 +97,36 @@ export class HomePage extends BaseComponent {
             horizontalLine1.classList.add('animate');
             horizontalLine2.classList.add('horizontal-line');
             horizontalLine2.classList.add('animate');
-    
+            
             const projectDescription = document.createElement('p');
             projectDescription.innerText = pr.description;
             projectDescription.classList.add('fade-in');
             projectDescription.classList.add('animate');
-    
+            
             const techStack = document.createElement('p');
             techStack.innerText = pr.tech;
             techStack.classList.add('fade-in');
             techStack.classList.add('animate');
-    
+            techStack.classList.add('tech-stack');
+            
             project.appendChild(projectTitle);
             project.appendChild(horizontalLine1);
             project.appendChild(projectDescription);
             project.appendChild(horizontalLine2);
             project.appendChild(techStack);
+            
+            // Time
+            const horizontalLine3 = document.createElement('div');
+            horizontalLine3.classList.add('horizontal-line');
+            horizontalLine3.classList.add('animate');
+            horizontalLine3.classList.add('time-line');
+            project.appendChild(horizontalLine3);
+            const time = document.createElement('p');
+            time.innerText = pr.time;
+            time.classList.add('fade-in');
+            time.classList.add('animate');
+            time.classList.add('time');
+            project.appendChild(time);
 
             // image/gif/video
             const illustration = document.createElement('div');
