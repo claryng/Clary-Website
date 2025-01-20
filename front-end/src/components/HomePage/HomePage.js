@@ -47,6 +47,16 @@ export class HomePage extends BaseComponent {
         const introduction = document.createElement('p');
         introduction.classList.add('introduction');
         introduction.innerText = "I'm a Computer Science/Math Double Major at Mount Holyoke College. My areas of interest include Computer Systems, Game Development, and Cybersecurity. Welcome to my project showcase.";
+        
+        // add github link
+        const github = document.createElement('a');
+        github.classList.add('fa-brands');
+        github.classList.add('fa-github');
+        github.setAttribute('href', 'https://github.com/claryng');
+        introduction.appendChild(document.createElement('br'));
+        introduction.appendChild(document.createElement('br'));
+        introduction.appendChild(github);
+        
         introduction.classList.add('animate');
 
         welcomeTextBox.appendChild(welcomeText);

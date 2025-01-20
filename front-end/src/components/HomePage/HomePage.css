@@ -45,6 +45,10 @@
     height: 100%;
 }
 
+.introduction a {
+    font-size: 26px;
+}
+
 
 /* Projects */
 
@@ -115,7 +119,8 @@
     animation: fadeIn ease-in-out 1.5s;
 }
 .fade-out-animation {
-    animation: fadeOut ease-in-out 1.5s;
+    /* animation: fadeOut ease-in-out 1.5s; */
+    opacity: 0;
 }
 
 .horizontal-line {
