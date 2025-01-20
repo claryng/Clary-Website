@@ -46,7 +46,7 @@ export class HomePage extends BaseComponent {
 
         const introduction = document.createElement('p');
         introduction.classList.add('introduction');
-        introduction.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis placerat. Etiam luctus sagittis diam eu vehicula. Curabitur velit nisl, elementum id odio dictum, faucibus tempus dolor. Nam imperdiet ac urna at fringilla. In pretium lacus erat, nec lobortis ipsum hendrerit eu. Morbi non lacus risus. Maecenas vel pulvinar.";
+        introduction.innerText = "I'm a Computer Science/Math Double Major at Mount Holyoke College. My areas of interest include Computer Systems, Game Development, and Cybersecurity. Welcome to my project showcase.";
         introduction.classList.add('animate');
 
         welcomeTextBox.appendChild(welcomeText);
