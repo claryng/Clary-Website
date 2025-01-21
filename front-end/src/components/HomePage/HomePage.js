@@ -160,7 +160,10 @@ export class HomePage extends BaseComponent {
     #initObserver() {
         this.#observer = new IntersectionObserver(entries => {
             entries.forEach((entry) => {
-                if(entry.target.querySelector('#spline') || entry.target.classList.contains('fade-in')) {
+                if(entry.target.querySelector('#spline')) {
+                    ;
+                }
+                else if(entry.target.classList.contains('fade-in')) {
                     entry.target.classList.toggle('fade-in-animation', entry.isIntersecting);
                     entry.target.classList.toggle('fade-out-animation', !entry.isIntersecting);
                 } else if(entry.target.classList.contains('horizontal-line')) {
