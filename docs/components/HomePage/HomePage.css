@@ -199,7 +199,7 @@
     .welcome-slide {
         grid-template-columns: 1fr;
         margin: auto;
-        padding: auto;
+        padding-right: 0px;
     }
 
     .welcome-text-box {
@@ -207,7 +207,7 @@
         height: 90%;
         text-align: center;
         margin: auto;
-        padding: auto;
+        padding-right: auto;
     }
 
     .welcome-text {
