@@ -198,6 +198,8 @@
 
     .welcome-text-box {
         text-align: center;
+        margin: auto;
+        padding: auto;
     }
 
     .project-container {
