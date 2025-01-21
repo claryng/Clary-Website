@@ -48,14 +48,27 @@ export class HomePage extends BaseComponent {
         introduction.classList.add('introduction');
         introduction.innerText = "I'm a Computer Science/Math Double Major at Mount Holyoke College. My areas of interest include Computer Systems, Game Development, and Cybersecurity. Welcome to my project showcase.";
         
+        // add icons
+        const icons = document.createElement('div');
+
         // add github link
         const github = document.createElement('a');
         github.classList.add('fa-brands');
         github.classList.add('fa-github');
         github.setAttribute('href', 'https://github.com/claryng');
+
+        // add linkedin link
+        const linkedin = document.createElement('a');
+        linkedin.classList.add('fa-brands');
+        linkedin.classList.add('fa-linkedin');
+        linkedin.setAttribute('href', 'https://www.linkedin.com/in/clary-n-030a822a6/');
+
+        icons.appendChild(github);
+        icons.appendChild(linkedin);
+
         introduction.appendChild(document.createElement('br'));
         introduction.appendChild(document.createElement('br'));
-        introduction.appendChild(github);
+        introduction.appendChild(icons);
         
         introduction.classList.add('animate');
 
