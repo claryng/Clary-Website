@@ -203,6 +203,8 @@
     }
 
     .welcome-text-box {
+        width: 90%;
+        height: 90%;
         text-align: center;
         margin: auto;
         padding: auto;
