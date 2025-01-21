@@ -1,0 +1,46 @@
+3D Projection - Rendering a Polyhedron in 2D,"- Developed software in Python with Numpy and Pygame libraries to project 3D dimensions to 2D. 
+- Incorporated trigonometry and linear algebra to rotate the projected 3D shape. ","Python, VS Code, Math, Pygame, Numpy",November 2021,https://user-images.githubusercontent.com/91236114/183835472-7d172e96-2427-43ad-bd00-b0ba403c4514.gif,https://github.com/claryng/3D-Projection-Rendering-a-polyhedron-in-2D---Computer-Graphics-?tab=readme-ov-file
+Engineering Project - Music House,"- Built a house model with C++ and other engineering components, including a speaker, a continuous servo, a servo, soft circuits with 2 LEDs, a fan, a button, 3D printed models, Arduino Uno, breadboard, and an automatic LED.","C++, Autodesk Tinkercad (CAD), 3D Printing, Arduino Uno",May 2022,https://drive.google.com/file/d/1f2Y7u-W1CCrf8fRdwP-m4DDDQhaYkm38/preview,https://sites.google.com/mtholyoke.edu/clarydesignnotebook/project-6-final-project?authuser=2
+Donut Testing,"- Created software in Python with Numpy, MediaPipe Landmarker task, OpenCV, and Pygame libraries to project a donut to 2D and control its roatation with hand detection.","Python, VS Code, Numpy, Mediapipe, Math",August 2022,https://drive.google.com/file/d/11piemczsaq1roWzgS4Owr4eIUeLyThok/preview,https://github.com/claryng/3D-Projection-Hand-Pose-Detection-Image-Video-Processing
+Hackathon,"- Developed a game in Python with Numpy, MediaPipe Landmarker task, OpenCV, and Pygame libraries:
+- In this game, the player uses their hands to control the basket in order to catch cute animals falling from the sky. If the player raises their left hand, the basket moves to the left. If the player raises their right hand, the basket moves to the right accordingly. If the player raises both hands, the basket stops moving. Every time an animal is caught, a sound unique to that animal is played. With each turn, the player has three lives, which means it is game over if they fail to catch three animals.
+- Implemented the core game algorithms to control the animals and the basket.","Python, Game Programming, Pygame, Numpy, Machine Learning, Math, VS Code, Atom",November 2022,https://www.youtube.com/embed/yDB4VKevuBs,https://devpost.com/software/cuties-catcher
+Arcade Video Game - Asteroids,"- Worked in a team of 4.
+- Created a game in Java with Java AWT (Abstract Window Toolkit) and Java Swing: 
+- In this game, the player control a spaceship to shoot asteroids and avoid getting hit by asteroids.
+- Developed the main algorithms to control the spaceship and the bullets to hit the asteroids.
+- Contributed to the code that control how the asteroids are broken into smaller pieces after getting shot and disappeared.","Java, GIT, JUnit, Eclipse, GitHub",December 2022,https://drive.google.com/file/d/1N9hQp7zCaL-np0jgRJUA-sREj_5ue_Pz/preview,https://github.com/claryng/Asteroids
+Mips Processor,"- Worked in a team of 3.
+- Developed the software in C to simulate a MIPS processor by executing instructions and displaying the content of the data memory and the registers.
+- Wrote code to incorporate all components: register file, data memory, instruction memory, and the control signals. 
+- Contributed to the code that simulate the control signals and the register file. ","C, Linux, Computing System, Assembly Language, Makefile",May 2023,https://drive.google.com/file/d/1rnJ9ev2ypCzOIa2KMKXf9OwV5GYC8mqd/preview,https://github.com/claryng/MIPS-Processor-Simulator
+Research Security,"- Conducted a network security research with a Computer Science Professor.
+- Read 3 articles and 2 books on cybersecurity: Wireless network security, including MITM attacks and WEP/WPA attacks; Network attacks and exploitations, including non-kinetic computer network attacks. 
+- Studied fundamentals of networking through an online course on Udemy: IP subnetting, VPN, OSI model, and TCP/IP model.
+- Practiced Linux commands with VirtualBox and Kali Linux.
+- Acquired knowledge of web security basics on Hack The Box: Basic SQL and SQL injection.
+","Linux, Bash, Documentation, Research",February 2023 - May 2023,https://giphy.com/embed/5WJ6SOKeNKrSzblU4R,https://drive.google.com/file/d/1uPff-_915nAXsHYmgVtIPQL1WNVXZuHO/preview
+Android Mobile Game,"- Collaborated with a digital artist.
+- Developed a 2D mobile game in C# with Unity Game Engine: 
+- In this game, the player controlled a character by swiping left and right to collect color bars that match the current character's color and avoid hitting bars with different color.
+- Wrote 26+ scripts with 1000+ lines of code to create the whole game.
+- Incorporated Google Play Games features: Saved Game and Achievements.
+- Implemented code to display Google Ads and Unity Ads.","C#, GIT, Unity Game Engine, Visual Studio, Google Cloud Platform",June 2023 - July 2023,https://drive.google.com/file/d/1HPBkz7mdYaalVoyc_OvCLLZEqg2_E7Qk/preview,https://github.com/claryng/SpacePalettes
+Machine Learning Project - Evaluation of ML Models on Credit Card Fraud Detection,"- Collaborated with a partner, read 5 articles, processed 4 Kaggle datasets, trained 13 models (6 Decision Tree, 4 KNN, 3 Random Forest), and performed undersampling for imbalanced datasets.","Python, NumPy, pandas, GIT, Scikit, TensorFlow, Keras, Jupyter Notebook",November 2023 - December 2023,https://giphy.com/embed/y4jCIHstoOtPCwuNdg,https://drive.google.com/file/d/1c_Q5KHksMxA5VV3EVXodMxuXLOXLfudw/preview
+Security Project - Buffer Overflow,"- Read 16 articles on stack buffer overflow and protection mechanisms.
+- Performed a stack buffer overflow exploit using C, Python, Vim editor, GDB debugger, and Kali Linux.
+- Wrote a paper and presented on how to perform the exploit.","C, Bash, Linux, Operating Systems, Security, Assembly Language",November 2023 - December 2023,https://giphy.com/embed/7FrOU9tPbgAZtxV5mb,https://drive.google.com/file/d/1zdAmcJzhtphLB78gw9JPH7ietzEoIzJY/preview
+Internship Project - Library Migration,"Impact: Reduced query response time by 50%, solved 5+ customers’ issues, and addressed tech debt
+- Wrote and refactored 10,000+ lines of code in 16 scripts and contributed to 40+ diffs
+- Generated database schema migrations for 3 tables in the customer databases","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",June 2024 - July 2024,https://giphy.com/embed/QJVhqOoImB3zfHfvj8,N/A
+Internship Project - Data Aggregation and Deletion,"Impact: Saved storage space and cost by deleting 98% of stale data in a table in the databases
+- Authored 2000+ lines of code in 4 scripts
+- Performed data aggregation to optimize the data deletion process","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",July 2024 - August 2024,https://giphy.com/embed/9j5LELD2fSz2aYGGCe,N/A
+Full-Stack Web Application - Meal Planner,"- Worked in a team of 4.
+- Developed a web application with HTML, CSS, JavaScript, Express.js, and Sequelize to recommend recipes to users based on specific criteria.
+- Built the main Meal Planner page (both back-end and front-end) that takes in user input: weight, height, age, gender, etc. to calculate the TDEE (Total Daily Energy Expenditure) and suggest meals (breakfast, lunch, dinner) for different goals (gain weight, maintain weight, lose weight).
+- Created the Recipes table and APIs to interact with the table: get random recipes, get recipes based on ingredients/diet type/calories, and fetch recipes from a remote database to store in the local database. ","JavaScript, HTML, CSS, Express.js, Sequelize, API, Databases, Microservices",October 2024 - November 2024,https://drive.google.com/file/d/1oBc1QQs0hhtCKwi6pq6RXqIOjVRzOobF/preview,https://github.com/mya03/Meal-Planner
+Logic Puzzle Video Game - Minesweeper ,"- Worked in a team of 4.
+- Developed a Minesweeper-like game in Java.
+- Wrote the core game algorithm using Breadth First Search algorithm.
+- Implemented additional features to add game feel: levels, timer, texts.","Java, GIT, Game Programming, Algorithms, Data Structures, VS Code",November 2024,https://drive.google.com/file/d/1HPqknDMnyt9CZHaGy8lrMcNsmSYpap4D/preview,N/A

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "cd back-end && npm install",
+    "start": "cd back-end && npm start"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
