@@ -186,3 +186,51 @@
     color: #e867ea;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    #spline {
+        visibility: hidden;
+    }
+
+    .welcome-slide {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-text-box {
+        text-align: center;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+
+    .project {
+        text-align: left;
+    }
+
+    .project-illustration {
+        width: 90vw;
+        height: 70vh;
+        margin: auto;
+    }
+
+    .horizontal-line {
+        width: 90vw;
+        margin: auto;
+        padding: auto;
+        left: 5%;
+    }
+
+    .time {
+        text-align: left;
+        padding: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-illustration {
+        height: 50vh;
+    }
+}
