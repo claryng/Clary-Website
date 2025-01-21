@@ -194,6 +194,8 @@
 
     .welcome-slide {
         grid-template-columns: 1fr;
+        margin: auto;
+        padding: auto;
     }
 
     .welcome-text-box {
