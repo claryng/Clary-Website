@@ -192,6 +192,10 @@
         visibility: hidden;
     }
 
+    .interactive-figure {
+        visibility: hidden;
+    }
+
     .welcome-slide {
         grid-template-columns: 1fr;
         margin: auto;
@@ -200,6 +204,11 @@
 
     .welcome-text-box {
         text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    .welcome-text {
         margin: auto;
         padding: auto;
     }
