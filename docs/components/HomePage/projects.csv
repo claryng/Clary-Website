@@ -32,10 +32,15 @@ Security Project - Buffer Overflow,"- Read 16 articles on stack buffer overflow 
 - Wrote a paper and presented on how to perform the exploit.","C, Bash, Linux, Operating Systems, Security, Assembly Language",November 2023 - December 2023,https://giphy.com/embed/7FrOU9tPbgAZtxV5mb,https://drive.google.com/file/d/1zdAmcJzhtphLB78gw9JPH7ietzEoIzJY/preview
 Internship Project - Library Migration,"Impact: Reduced query response time by 50%, solved 5+ customers’ issues, and addressed tech debt
 - Wrote and refactored 10,000+ lines of code in 16 scripts and contributed to 40+ diffs
-- Generated database schema migrations for 3 tables in the customer databases","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",June 2024 - July 2024,https://giphy.com/embed/QJVhqOoImB3zfHfvj8,N/A
+- Generated database schema migrations for 3 tables in the customer databases
+- Tested code: Conducted unit testing using Go packages Suite and Testify, monitored logs to ensure error-free code execution, and documented 3 test plans
+- Implemented industry-standard practices, including code review, cross-functional team collaboration, debugging, code deployment, version control, sprint planning, and effective communication
+","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",June 2024 - July 2024,https://giphy.com/embed/QJVhqOoImB3zfHfvj8,N/A
 Internship Project - Data Aggregation and Deletion,"Impact: Saved storage space and cost by deleting 98% of stale data in a table in the databases
 - Authored 2000+ lines of code in 4 scripts
-- Performed data aggregation to optimize the data deletion process","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",July 2024 - August 2024,https://giphy.com/embed/9j5LELD2fSz2aYGGCe,N/A
+- Performed data aggregation to optimize the data deletion process
+- Tested code: Conducted unit testing using Go packages Suite and Testify, monitored logs to ensure error-free code execution, and documented 3 test plans
+- Implemented industry-standard practices, including code review, cross-functional team collaboration, debugging, code deployment, version control, sprint planning, and effective communication","Go, SQL, Linux, Testify, Visual Studio Code, Docker, GIT, Google Cloud Logging, Phabricator, Jira, Distributed Systems, Workflow, Task-chain Automation, Cloud and On-premise Computing, RDBMS",July 2024 - August 2024,https://giphy.com/embed/9j5LELD2fSz2aYGGCe,N/A
 Full-Stack Web Application - Meal Planner,"- Worked in a team of 4.
 - Developed a web application with HTML, CSS, JavaScript, Express.js, and Sequelize to recommend recipes to users based on specific criteria.
 - Built the main Meal Planner page (both back-end and front-end) that takes in user input: weight, height, age, gender, etc. to calculate the TDEE (Total Daily Energy Expenditure) and suggest meals (breakfast, lunch, dinner) for different goals (gain weight, maintain weight, lose weight).
@@ -43,4 +48,4 @@ Full-Stack Web Application - Meal Planner,"- Worked in a team of 4.
 Logic Puzzle Video Game - Minesweeper ,"- Worked in a team of 4.
 - Developed a Minesweeper-like game in Java.
 - Wrote the core game algorithm using Breadth First Search algorithm.
-- Implemented additional features to add game feel: levels, timer, texts.","Java, GIT, Game Programming, Algorithms, Data Structures, VS Code",November 2024,https://drive.google.com/file/d/1HPqknDMnyt9CZHaGy8lrMcNsmSYpap4D/preview,N/A
+- Implemented additional features to add game feel: levels, timer, texts.","Java, GIT, Game Programming, Algorithms, Data Structures, VS Code",November 2024,https://drive.google.com/file/d/1bz8BTOL0QQVDEbZCzi9cKaUxd1ztprUf/preview,N/A
