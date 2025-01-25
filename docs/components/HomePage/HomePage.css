@@ -17,14 +17,18 @@
 
 .welcome-slide {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     color: #48f2fb;
+}
+
+.small-screen {
+    display: none;
 }
 
 .welcome-text-box {
     border-radius: 10%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 10%;
     width: 75%;
     height: 75%;
     text-align: left;
@@ -34,10 +38,6 @@
 .welcome-text {
     padding-top: 20%;
     font-size: 400%;
-}
-
-.interactive-figure {
-    padding-right: 15%;
 }
 
 #spline {
@@ -194,6 +194,14 @@
 
     .interactive-figure {
         visibility: hidden;
+    }
+
+    .welcome-text {
+        display: none;
+    }
+
+    .small-screen {
+        display: inline-block;
     }
 
     .welcome-slide {

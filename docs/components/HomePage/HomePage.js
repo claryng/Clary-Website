@@ -40,9 +40,16 @@ export class HomePage extends BaseComponent {
         welcomeTextBox.classList.add('welcome-text-box');
 
         const welcomeText = document.createElement('h1');
-        welcomeText.innerText = "Hi, I'm Clary";
+        welcomeText.innerText = "Hello";
         welcomeText.classList.add('welcome-text');
         welcomeText.classList.add('animate');
+
+        // small screen
+        const smallWelcome = document.createElement('h1');
+        smallWelcome.innerText = "Hi, I'm Clary";
+        smallWelcome.classList.add('welcome-text');
+        smallWelcome.classList.add('animate');
+        smallWelcome.classList.add('small-screen');
 
         const introduction = document.createElement('p');
         introduction.classList.add('introduction');
@@ -73,6 +80,7 @@ export class HomePage extends BaseComponent {
         introduction.classList.add('animate');
 
         welcomeTextBox.appendChild(welcomeText);
+        welcomeTextBox.appendChild(smallWelcome);
         welcomeTextBox.appendChild(introduction);
         slideContainer.appendChild(welcomeTextBox);
 
@@ -81,7 +89,7 @@ export class HomePage extends BaseComponent {
         interactiveFigure.classList.add('animate');
 
         const spline3d = document.createElement('iframe');
-        spline3d.setAttribute('src', 'https://my.spline.design/untitled-7e19e8abccace036ed843c404d3837a4/');
+        spline3d.setAttribute('src', 'https://my.spline.design/untitled-17e86cdd0385f197505eecc0cd3c7611/');
         spline3d.setAttribute('frameborder', 0);
         spline3d.setAttribute('id', 'spline');
 
