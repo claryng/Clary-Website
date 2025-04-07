@@ -53,7 +53,7 @@ export class HomePage extends BaseComponent {
 
         const introduction = document.createElement('p');
         introduction.classList.add('introduction');
-        introduction.innerText = "I'm a Computer Science/Math Double Major student at Mount Holyoke College. My areas of interest include Computer Systems, Game Development, and Cybersecurity. Welcome to my project showcase.";
+        introduction.innerText = "I'm a passionate software developer, a perpetual learner, and a challenge-seeker. My areas of interest include Computer Systems, Game Development, and Cybersecurity. Welcome to my project showcase.";
         
         // add icons
         const icons = document.createElement('div');
